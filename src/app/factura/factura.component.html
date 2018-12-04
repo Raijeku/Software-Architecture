@@ -1,0 +1,27 @@
+
+<div *ngFor="let factura of facturas | async">
+  <div class="factura-container" *ngIf="factura.id==facturaId">
+    <div class="row">
+    <div class="col-sm-4" style="border-radius: 10px; text-align:center;">
+      <img src="../../assets/ticket.png" class="img-fluid">
+    </div>
+    <div class="col-sm-8">
+      <div class="row">
+        <h5>Cedula: {{factura.cedulaUsuario}}</h5>
+      </div>
+      <div class="row">
+        <h5>{{factura.fecha}}</h5>
+      </div>
+      <div class="row">
+        <h5>Precio por unidad: {{factura.precio}}</h5>
+      </div>
+      <div class="row">
+        <h5>Cantidad: {{factura.cantidad}}</h5>
+      </div>
+      <div class="row">
+        <h5>Valor total: {{factura.valor}}</h5>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.factura-container {
+    box-shadow: 5px 5px 4px grey;
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+.factura-container img {
+    width: 96px;
+    height: 96px;
+}
