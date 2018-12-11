@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body{
+                color: white;
+            }
+            
+            body {
+                background-color: black;
+            }
+            
+            canvas {
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tablero Compartido</h1>
+        <div id="output"></div>
+        <table>
+            <tr>
+                <td>
+                    <canvas id="myCanvas" width="150" height="150"
+                            style="border:1px solid #000000;"></canvas>
+                </td>
+                <td>
+                    <form name="inputForm">
+                        <table>
+                            <tr>
+                                <th>Color</th>
+                                <td><input type="radio" name="color" value="#FF0000" checked>Rojo</td>
+                                <td><input type="radio" name="color" value="#0000FF" >Azul</td>
+                                <td><input type="radio" name="color" value="#FF9900" >Naranja</td>
+                                <td><input type="radio" name="color" value="#33CC33" >Verde</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" id="clear" class="btn btn-danger">Clear</button></td>
+                                <td><button type="button" id="save" class="btn btn-success">Save</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="websocket.js"></script>
+        <script type="text/javascript" src="tablero.js"></script>
+    </body>
+</html>
