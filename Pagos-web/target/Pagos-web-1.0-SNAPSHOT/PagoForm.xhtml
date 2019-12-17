@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Id:" for="id" />
+                    <h:inputText id="id" value="#{pagoMBean.pago.id}" title="Id" required="true" requiredMessage="The Id field is required."/>
+                    <h:outputLabel value="Nombre:" for="nombre" />
+                    <h:inputText id="nombre" value="#{pagoMBean.pago.nombre}" title="Nombre" required="true" requiredMessage="The Nombre field is required."/>
+                    <h:outputLabel value="Email:" for="email" />
+                    <h:inputText id="email" value="#{pagoMBean.pago.email}" title="Email" required="true" requiredMessage="The Email field is required."/>
+                    <h:outputLabel value="CardNumber:" for="cardNumber" />
+                    <h:inputText id="cardNumber" value="#{pagoMBean.pago.cardNumber}" title="CardNumber" required="true" requiredMessage="The CardNumber field is required."/>
+                    <h:outputLabel value="Cvv:" for="cvv" />
+                    <h:inputText id="cvv" value="#{pagoMBean.pago.cvv}" title="Cvv" required="true" requiredMessage="The Cvv field is required."/>
+                    <h:outputLabel value="CardType:" for="cardType" />
+                    <h:inputText id="cardType" value="#{pagoMBean.pago.cardType}" title="CardType" required="true" requiredMessage="The CardType field is required."/>
+                    <h:outputLabel value="ValorTransaccion:" for="valorTransaccion" />
+                    <h:inputText id="valorTransaccion" value="#{pagoMBean.pago.valorTransaccion}" title="ValorTransaccion" required="true" requiredMessage="The ValorTransaccion field is required."/>
+                    <h:outputLabel value="Vencimiento:" for="vencimiento" />
+                    <h:inputText id="vencimiento" value="#{pagoMBean.pago.vencimiento}" title="Vencimiento" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+
+    </h:body>
+</html>
+
