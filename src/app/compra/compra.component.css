@@ -1,0 +1,21 @@
+.boleta-container {
+    box-shadow: 5px 5px 4px grey;
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+}
+
+.boleta-container img {
+    width: 96px;
+    height: 96px;
+}
+
+.boleta-container .button {
+    border-radius: 3px;
+    background-color: lime;
+    margin: 10px 10px 10px 10px;
+    width: 90px;
+    height: fit-content;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+}

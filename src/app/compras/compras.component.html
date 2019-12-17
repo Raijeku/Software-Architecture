@@ -1,0 +1,20 @@
+<div class="row"*ngFor="let factura of facturas | async">
+    <div class="col-sm">
+      <div class="factura-container" (click)="viewFactura(factura.id)">
+        <div class="row">
+          <div class="col-sm-2" style="border-radius: 10px; text-align:center;">
+            <img src="../../assets/ticket.png">
+          </div>
+          <div class="col-sm-10">
+            <div class="row">
+              Cliente: {{factura.cedulaUsuario}} Fecha: {{factura.fecha}}
+            </div>
+            <div class="row">
+               Cantidad: {{factura.cantidad}} Valor: {{factura.valor}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  

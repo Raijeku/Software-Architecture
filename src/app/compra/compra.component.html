@@ -1,0 +1,29 @@
+<div class="row"*ngFor="let boleta of boletas | async">
+  <div class="col-sm">
+    <div class="boleta-container" (click)="addFactura(boleta)">
+      <div class="row">
+        <div class="col-sm-2" style="border-radius: 10px; text-align:center;">
+          <img src="../../assets/ticket.png">
+        </div>
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-sm-9">
+              <h4>{{boleta.titulo}}</h4>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <h4>Precio: {{boleta.precio}}</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            Fecha: {{boleta.fecha}} Localidad: {{boleta.localidad}}
+          </div>
+          <div class="row">
+              Cantidad de boletas disponibles: {{boleta.cantidad}}
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
