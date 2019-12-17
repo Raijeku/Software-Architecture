@@ -1,0 +1,10 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 1CC8-7C42
+
+ Directorio de C:\Users\Davquiroga\Arquitectura de Software
+
+17/12/2019  06:49 p. m.    <DIR>          .
+17/12/2019  06:49 p. m.    <DIR>          ..
+17/12/2019  06:49 p. m.                 0 deleteme.txt
+               1 archivos              0 bytes
+               2 dirs  230.039.683.072 bytes libres
